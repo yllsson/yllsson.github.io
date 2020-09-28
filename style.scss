@@ -1,0 +1,14 @@
+---
+---
+
+$theme-color: blue;
+
+body {
+    color: $theme-color;
+}
+
+.container {
+    p {
+        background-color: $theme-color;
+    }
+}
