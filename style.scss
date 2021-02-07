@@ -1,14 +1,60 @@
----
----
-
-$theme-color: blue;
+* {
+  box-sizing: border-box;
+}
 
 body {
-    color: $theme-color;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+
+  img {
+    height: 100%;
+  }
+
+  nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+      height: 100%;
+      margin-right: 2rem;
+    }
+  }
 }
 
 .container {
-    p {
-        background-color: $theme-color;
+  .title {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+
+    .titleHeaders {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      width: 50%;
+      padding-left: 5rem;
     }
+
+    img {
+      width: 50%;
+    }
+  }
 }
