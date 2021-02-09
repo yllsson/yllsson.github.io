@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -42,7 +43,7 @@ header nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem 5rem;
 }
 
 .container .title .titleHeaders {
@@ -51,36 +52,37 @@ header nav a {
   justify-content: center;
   align-items: flex-start;
   width: 30%;
-  padding-left: 5rem;
 }
 
 .container .title .titleHeaders h1,
 .container .title .titleHeaders h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: #0f4b57;
 }
 
 .container .title .titleImages {
   max-width: 50%;
   height: 100%;
-  width: 50%;
-  margin: 0 2rem;
+  width: 70%;
   position: relative;
 }
 
 .container .title .titleImages .justYlva {
   position: absolute;
-  top: 15.5rem;
-  right: -55rem;
+  top: 33%;
+  right: -58rem;
   z-index: 1;
   height: 70%;
-  transform: translateX(-70.5rem);
-  transition: transform 2.5s ease;
+  transform: translateX(-70.8rem);
+  transition: transform 2.5s ease-out;
 }
 
 .container .title .titleImages .ylvaBg {
   position: absolute;
   top: 70rem;
-  right: 73rem;
+  right: 70rem;
   z-index: -1;
   height: 100%;
   transform: translateX(70rem) translateY(-70rem);

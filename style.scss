@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -43,46 +45,48 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem 5rem;
 
     .titleHeaders {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      // flex: 1;
 
       width: 30%;
-      padding-left: 5rem;
 
       h1,
       h2 {
-        font-size: 3rem;
+        font-size: 4rem;
+        font-family: 'Poppins';
+        font-weight: 400;
+        color: #0f4b57;
       }
     }
 
     .titleImages {
       max-width: 50%;
       height: 100%;
-      width: 50%;
-      margin: 0 2rem;
+      width: 70%;
+      // margin: 0 6rem 0 0;
       position: relative;
 
       .justYlva {
         position: absolute;
-        top: 15.5rem;
-        right: -55rem;
+        top: 33%;
+        right: -58rem;
         z-index: 1;
         height: 70%;
+        // opacity: 1; add fade in animation on the images?
 
-        transform: translateX(-70.5rem);
-        transition: transform 2.5s ease;
+        transform: translateX(-70.8rem);
+        transition: transform 2.5s ease-out;
       }
 
       .ylvaBg {
         position: absolute;
         top: 70rem;
-        right: 73rem;
+        right: 70rem;
         z-index: -1;
         height: 100%;
 
