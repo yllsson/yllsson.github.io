@@ -5,6 +5,7 @@
 body {
   background-color: #fff;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -49,8 +50,7 @@ header nav a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 1;
-  width: 50%;
+  width: 30%;
   padding-left: 5rem;
 }
 
@@ -62,22 +62,27 @@ header nav a {
 .container .title .titleImages {
   max-width: 50%;
   height: 100%;
-  width: 50vw;
-  margin: 0 4rem;
+  width: 50%;
+  margin: 0 2rem;
   position: relative;
 }
 
 .container .title .titleImages .justYlva {
   position: absolute;
-  left: 30%;
-  bottom: 20%;
+  top: 15.5rem;
+  right: -55rem;
   z-index: 1;
+  height: 70%;
+  transform: translateX(-70.5rem);
+  transition: transform 2.5s ease;
 }
 
 .container .title .titleImages .ylvaBg {
-  width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 70rem;
+  right: 73rem;
   z-index: -1;
+  height: 100%;
+  transform: translateX(70rem) translateY(-70rem);
+  transition: transform 2.5s ease;
 }
