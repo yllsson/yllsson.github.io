@@ -38,8 +38,9 @@ header {
 .container {
   .title {
     width: 100vw;
+    height: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1.5rem;
 
@@ -48,13 +49,38 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      flex: 1;
 
       width: 50%;
       padding-left: 5rem;
+
+      h1,
+      h2 {
+        font-size: 3rem;
+      }
     }
 
-    img {
-      width: 50%;
+    .titleImages {
+      max-width: 50%;
+      height: 100%;
+      width: 50vw;
+      margin: 0 4rem;
+      position: relative;
+
+      .justYlva {
+        position: absolute;
+        left: 30%;
+        bottom: 20%;
+        z-index: 1;
+      }
+
+      .ylvaBg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
     }
   }
 }

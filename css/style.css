@@ -37,8 +37,9 @@ header nav a {
 
 .container .title {
   width: 100vw;
+  height: 70vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
 }
@@ -48,10 +49,35 @@ header nav a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex: 1;
   width: 50%;
   padding-left: 5rem;
 }
 
-.container .title img {
-  width: 50%;
+.container .title .titleHeaders h1,
+.container .title .titleHeaders h2 {
+  font-size: 3rem;
+}
+
+.container .title .titleImages {
+  max-width: 50%;
+  height: 100%;
+  width: 50vw;
+  margin: 0 4rem;
+  position: relative;
+}
+
+.container .title .titleImages .justYlva {
+  position: absolute;
+  left: 30%;
+  bottom: 20%;
+  z-index: 1;
+}
+
+.container .title .titleImages .ylvaBg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
