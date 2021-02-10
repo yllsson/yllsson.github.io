@@ -5,17 +5,19 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background-color: #fff;
   font-family: sans-serif;
   font-size: 16px;
 }
 
 header {
-  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(212, 212, 212, 0.6);
 
   img {
     height: 100%;
@@ -78,9 +80,6 @@ header {
         z-index: 1;
         height: 70%;
         // opacity: 1; add fade in animation on the images?
-
-        transform: translateX(-70.8rem);
-        transition: transform 2.5s ease-out;
       }
 
       .ylvaBg {
@@ -89,9 +88,18 @@ header {
         right: 70rem;
         z-index: -1;
         height: 100%;
+      }
+    }
 
+    .titleImages.loaded {
+      .justYlva {
+        transform: translateX(-72rem);
+        transition: transform 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+      }
+
+      .ylvaBg {
         transform: translateX(70rem) translateY(-70rem);
-        transition: transform 2.5s ease;
+        transition: transform 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
       }
     }
   }
