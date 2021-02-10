@@ -62,6 +62,7 @@ header nav a {
   font-family: 'Poppins';
   font-weight: 400;
   color: #0f4b57;
+  z-index: 1;
 }
 
 .container .title .titleImages {
@@ -75,24 +76,24 @@ header nav a {
   position: absolute;
   top: 33%;
   right: -58rem;
-  z-index: 1;
+  z-index: 0;
   height: 70%;
 }
 
 .container .title .titleImages .ylvaBg {
   position: absolute;
-  top: 70rem;
-  right: 70rem;
+  top: -30rem;
+  right: -80rem;
   z-index: -1;
   height: 100%;
 }
 
 .container .title .titleImages.loaded .justYlva {
   transform: translateX(-72rem);
-  transition: transform 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+  transition: transform 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
 
 .container .title .titleImages.loaded .ylvaBg {
-  transform: translateX(70rem) translateY(-70rem);
+  transform: translateX(-80rem) translateY(30rem);
   transition: transform 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
