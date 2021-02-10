@@ -104,4 +104,27 @@ header {
       }
     }
   }
+
+  .projects {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .project {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        width: 50%;
+      }
+
+      h2 {
+        font-size: 3rem;
+        width: 30%;
+        text-align: center;
+      }
+    }
+  }
 }

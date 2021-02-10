@@ -97,3 +97,26 @@ header nav a {
   transform: translateX(-80rem) translateY(30rem);
   transition: transform 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
+
+.container .projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .projects .project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .projects .project img {
+  width: 50%;
+}
+
+.container .projects .project h2 {
+  font-size: 3rem;
+  width: 30%;
+  text-align: center;
+}
