@@ -77,16 +77,15 @@ header {
       .justYlva {
         position: absolute;
         top: 33%;
-        right: -58rem;
+        right: -60rem;
         z-index: 0;
         height: 70%;
-        // opacity: 1; add fade in animation on the images?
       }
 
       .ylvaBg {
         position: absolute;
         top: -30rem;
-        right: -80rem;
+        right: -60rem;
         z-index: -1;
         height: 100%;
       }
@@ -94,13 +93,14 @@ header {
 
     .titleImages.loaded {
       .justYlva {
-        transform: translateX(-72rem);
-        transition: transform 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+        right: 18%;
+        transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
       }
 
       .ylvaBg {
-        transform: translateX(-80rem) translateY(30rem);
-        transition: transform 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+        top: 0;
+        right: 0;
+        transition: right 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
       }
     }
   }
