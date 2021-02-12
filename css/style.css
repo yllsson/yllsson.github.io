@@ -118,25 +118,6 @@ header nav a {
   justify-content: center;
 }
 
-.container .projects .project1 {
-  grid-area: project1;
-  background-image: url("/pics/50p50d2.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.container .projects .project2 {
-  grid-area: project2;
-}
-
-.container .projects .project3 {
-  grid-area: project3;
-}
-
-.container .projects .project4 {
-  grid-area: project4;
-}
-
 .container .projects .project {
   border: 1px solid rgba(212, 212, 212, 0.6);
   border-radius: 15px;
@@ -152,4 +133,48 @@ header nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1rem 0;
+}
+
+.container .projects .project1 {
+  grid-area: project1;
+  background-image: url("/pics/randomQuoteMachine.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container .projects .project1 h3 {
+  text-align: center;
+}
+
+.container .projects .project2 {
+  grid-area: project2;
+}
+
+.container .projects .project2 img {
+  border-radius: 15px 15px 0 0;
+}
+
+.container .projects .project3 {
+  grid-area: project3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .projects .project3 .projectBg {
+  background-image: url("/pics/mdPreviewer.png");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  flex: 1;
+  border-radius: 15px 15px 0 0;
+}
+
+.container .projects .project4 {
+  grid-area: project4;
 }

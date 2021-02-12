@@ -128,25 +128,6 @@ header {
       justify-content: center;
     }
 
-    .project1 {
-      grid-area: project1;
-      background-image: url('/pics/50p50d2.png');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .project2 {
-      grid-area: project2;
-    }
-
-    .project3 {
-      grid-area: project3;
-    }
-
-    .project4 {
-      grid-area: project4;
-    }
-
     .project {
       // display: flex;
       // flex-direction: row;
@@ -161,7 +142,6 @@ header {
       img {
         width: 100%;
         z-index: -1;
-        // height: 100%;
       }
 
       h3 {
@@ -170,9 +150,54 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 1rem 0;
       }
     }
 
+    .project1 {
+      grid-area: project1;
+      background-image: url('/pics/randomQuoteMachine.png');
+      background-size: cover;
+      background-position: center;
+      // color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .project2 {
+      grid-area: project2;
+
+      img {
+        border-radius: 15px 15px 0 0;
+      }
+    }
+
+    .project3 {
+      grid-area: project3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .projectBg {
+        background-image: url('/pics/mdPreviewer.png');
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        // height: 60%;
+        flex: 1;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+
+    .project4 {
+      grid-area: project4;
+    }
     // .projectRev {
     //   flex-direction: row-reverse;
     // }
