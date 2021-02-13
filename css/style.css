@@ -18,6 +18,7 @@ header {
   align-items: center;
   padding: 1.5rem;
   border-bottom: 1px solid rgba(212, 212, 212, 0.6);
+  z-index: 0;
 }
 
 header img {
@@ -25,20 +26,47 @@ header img {
   margin-left: 1rem;
 }
 
-header nav {
+nav {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header nav a {
+nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: #0f4b57;
   height: 100%;
-  margin-right: 2rem;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+}
+
+nav a .hover {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+nav a .hover:before, nav a .hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  transition: all 0.75s ease-in-out;
+  opacity: 0;
+  background-color: rgba(15, 75, 87, 0.6);
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+nav a:hover .hover:before, nav a:hover .hover:after {
+  width: 100%;
+  opacity: 1;
 }
 
 .container .title {
@@ -84,14 +112,14 @@ header nav a {
 
 .container .title .titleImages .ylvaBg {
   position: absolute;
-  top: -30rem;
-  right: -60rem;
+  top: -50rem;
+  right: -80rem;
   z-index: -1;
   height: 100%;
 }
 
 .container .title .titleImages.loaded .justYlva {
-  right: 20%;
+  right: 28%;
   transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
 

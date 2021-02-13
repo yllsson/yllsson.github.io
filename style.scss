@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+$text-color: #0f4b57;
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +12,7 @@ body {
   background-color: #fff;
   font-family: 'Poppins';
   font-size: 16px;
-  color: #0f4b57;
+  color: $text-color;
 }
 
 header {
@@ -19,25 +21,55 @@ header {
   align-items: center;
   padding: 1.5rem;
   border-bottom: 1px solid rgba(212, 212, 212, 0.6);
+  z-index: 0;
 
   img {
     height: 100%;
     margin-left: 1rem;
   }
+}
 
-  nav {
-    height: 100%;
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    color: $text-color;
+    height: 100%;
+    margin-right: 3rem;
+    font-size: 1.3rem;
 
-    a {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      color: black;
-      height: 100%;
-      margin-right: 2rem;
+    .hover {
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 2px;
+        transition: all 0.75s ease-in-out;
+        opacity: 0;
+        background-color: rgba($text-color, 0.6);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      .hover {
+        &:before,
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
     }
   }
 }
@@ -64,7 +96,7 @@ header {
         font-size: 3rem;
         font-family: 'Poppins';
         // font-weight: 400;
-        color: #0f4b57;
+        color: $text-color;
         z-index: 1;
         margin: 0.5rem;
       }
@@ -86,8 +118,8 @@ header {
 
       .ylvaBg {
         position: absolute;
-        top: -30rem;
-        right: -60rem;
+        top: -50rem;
+        right: -80rem;
         z-index: -1;
         height: 100%;
       }
@@ -95,7 +127,7 @@ header {
 
     .titleImages.loaded {
       .justYlva {
-        right: 20%;
+        right: 28%;
         transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
       }
 
