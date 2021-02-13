@@ -18,7 +18,7 @@ header {
   align-items: center;
   padding: 1.5rem;
   border-bottom: 1px solid rgba(212, 212, 212, 0.6);
-  z-index: 0;
+  background-color: #fff;
 }
 
 header img {
@@ -69,7 +69,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   opacity: 1;
 }
 
-.container .title {
+.title {
   width: 100%;
   height: 70vh;
   display: flex;
@@ -78,7 +78,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   margin: 4rem 0;
 }
 
-.container .title .titleHeaders {
+.title .titleHeaders {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,8 +87,8 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   width: 40%;
 }
 
-.container .title .titleHeaders h1,
-.container .title .titleHeaders h2 {
+.title .titleHeaders h1,
+.title .titleHeaders h2 {
   font-size: 3rem;
   font-family: 'Poppins';
   color: #0f4b57;
@@ -96,13 +96,13 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   margin: 0.5rem;
 }
 
-.container .title .titleImages {
+.title .titleImages {
   height: 100%;
   width: 45%;
   position: relative;
 }
 
-.container .title .titleImages .justYlva {
+.title .titleImages .justYlva {
   position: absolute;
   top: 33%;
   right: -60rem;
@@ -110,7 +110,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   height: 70%;
 }
 
-.container .title .titleImages .ylvaBg {
+.title .titleImages .ylvaBg {
   position: absolute;
   top: -50rem;
   right: -80rem;
@@ -118,26 +118,26 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   height: 100%;
 }
 
-.container .title .titleImages.loaded .justYlva {
+.title .titleImages.loaded .justYlva {
   right: 28%;
   transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
 
-.container .title .titleImages.loaded .ylvaBg {
+.title .titleImages.loaded .ylvaBg {
   top: 0;
   right: 0;
   transition: top 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11), right 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
 
-.container .projects {
+.projects {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 0.5fr;
-  grid-template-areas: '. header header .' '. project1 project2 .' '. project3 project4 .';
-  gap: 2rem;
+  grid-template-columns: 1fr 25% 25% 1fr;
+  grid-template-rows: 10rem 30rem 30rem 5rem;
+  grid-template-areas: '. header header .' '. project1 project2 .' '. project3 project4 .' '. . . .';
+  gap: 4rem;
 }
 
-.container .projects h2 {
+.projects h2 {
   font-size: 2.5rem;
   text-align: center;
   grid-area: header;
@@ -146,63 +146,52 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   justify-content: center;
 }
 
-.container .projects .project {
-  border: 1px solid rgba(212, 212, 212, 0.6);
+.projects .project {
+  height: 100%;
+  border: 1px solid rgba(211, 211, 211, 0.6);
   border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.container .projects .project img {
+.projects .project img {
   width: 100%;
+  max-height: 80%;
+  object-fit: cover;
   z-index: -1;
+  border-radius: 15px 15px 0 0;
+  object-position: top;
 }
 
-.container .projects .project h3 {
+.projects .project h3 {
   font-size: 2rem;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
-}
-
-.container .projects .project1 {
-  grid-area: project1;
-  background-image: url("/pics/randomQuoteMachine.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.container .projects .project1 h3 {
   text-align: center;
 }
 
-.container .projects .project2 {
+.project1 {
+  grid-area: project1;
+}
+
+.project1 img {
+  object-position: center;
+}
+
+.project2 {
   grid-area: project2;
 }
 
-.container .projects .project2 img {
-  border-radius: 15px 15px 0 0;
-}
-
-.container .projects .project3 {
+.project3 {
   grid-area: project3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.container .projects .project3 .projectBg {
-  background-image: url("/pics/mdPreviewer.png");
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  flex: 1;
-  border-radius: 15px 15px 0 0;
-}
-
-.container .projects .project4 {
+.project4 {
   grid-area: project4;
 }
