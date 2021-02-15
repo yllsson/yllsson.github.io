@@ -232,6 +232,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   font-size: 1.5rem;
   margin-right: 2rem;
   padding: 0.5rem 1rem;
+  height: 3.5rem;
   border-radius: 15px;
   border: 1px solid #458992;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -239,20 +240,9 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .contact-links a span {
   margin-left: 0.5rem;
-}
-
-a.active {
-  width: auto;
-  transition: width 2s ease;
-}
-
-a.active p {
-  width: auto;
-  opacity: 1;
-  visibility: visible;
-  transition: width 2s ease, display 2s ease, opacity 2s ease;
 }

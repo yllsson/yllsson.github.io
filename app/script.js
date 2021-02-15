@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
   titleImgContainer.classList.add('loaded');
 });
 
-// CONTACT LINKS ANIMATION //
+// CONTACT LINKS ANIMATION (not yet in use)//
 
-const contactLinks = document.querySelectorAll('.contact-link');
+// const contactLinks = document.querySelectorAll('.contact-link');
 
-contactLinks.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    link.classList.add('active');
-  });
-  link.addEventListener('mouseleave', () => {
-    link.classList.remove('active');
-  });
-});
+// contactLinks.forEach(link => {
+//   link.addEventListener('mouseenter', () => {
+//     link.classList.add('active');
+//   });
+//   link.addEventListener('mouseleave', () => {
+//     link.classList.remove('active');
+//   });
+// });

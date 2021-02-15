@@ -235,38 +235,38 @@ nav {
   width: 70vw;
 
   a {
-    // background-color: lighten($text-color, 75%);
-    // background-color: #c1dee2;
     color: $text-color;
     text-decoration: none;
     font-size: 1.5rem;
     margin-right: 2rem;
     padding: 0.5rem 1rem;
+    height: 3.5rem;
 
     border-radius: 15px;
     border: 1px solid darken(#c1dee2, 40%);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
-    // width: 3.5rem;
-    // height: 3.5rem;
     @include flexbox(row);
+    position: relative;
 
     span {
       margin-left: 0.5rem;
+      // visibility: hidden;
+      // position: absolute;
     }
   }
 }
 
-a.active {
-  width: auto;
-  transition: width 2s ease;
+// CONTACT LINKS ANIMATION (not yet in use)//
 
-  p {
-    // display: inline;
-    width: auto;
-    opacity: 1;
-    visibility: visible;
+// a.active {
+//   width: auto;
+//   transition: width 2s ease;
 
-    transition: width 2s ease, display 2s ease, opacity 2s ease;
-  }
-}
+//   span {
+//     position: relative;
+
+//     visibility: visible;
+//     transition: visibility 2s ease, position 2s ease;
+//   }
+// }
