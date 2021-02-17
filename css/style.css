@@ -84,7 +84,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  margin: 4rem 0;
+  margin: 7rem 0 10rem;
 }
 
 .title .titleHeaders {
@@ -148,8 +148,8 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 
 .projects h2 {
   text-align: center;
-  margin: 1rem 0 5rem;
-  font-size: 3rem;
+  margin: 1rem 0 6rem;
+  font-size: 4rem;
 }
 
 .project {
@@ -161,7 +161,8 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   height: 60vh;
   margin: 0;
   overflow: hidden;
-  background-color: rgba(193, 222, 226, 0.1);
+  background-color: #0f4b57;
+  color: #fff;
 }
 
 .project h3,
@@ -296,4 +297,9 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 
 .contact-links a span {
   margin-left: 0.5rem;
+}
+
+.contact-links a:hover {
+  box-shadow: none;
+  transition: box-shadow 0.75s ease;
 }

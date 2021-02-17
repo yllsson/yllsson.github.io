@@ -93,7 +93,7 @@ nav {
   @include flexbox(row);
 
   justify-content: space-evenly;
-  margin: 4rem 0;
+  margin: 7rem 0 10rem;
 
   .titleHeaders {
     @include flexbox(column);
@@ -156,8 +156,8 @@ nav {
 
   h2 {
     text-align: center;
-    margin: 1rem 0 5rem;
-    font-size: 3rem;
+    margin: 1rem 0 6rem;
+    font-size: 4rem;
   }
 }
 
@@ -168,7 +168,8 @@ nav {
   margin: 0;
   overflow: hidden;
 
-  background-color: rgba(#c1dee2, 0.1);
+  background-color: $text-color;
+  color: #fff;
 
   h3,
   img {
@@ -195,7 +196,7 @@ nav {
   @include flexbox(row-reverse);
 }
 
-// PROJECTS GRID SETUP //
+// PROJECTS GRID SETUP (no longer in use) //
 
 /*
  .projects {
@@ -298,8 +299,11 @@ nav {
 
     span {
       margin-left: 0.5rem;
-      // visibility: hidden;
-      // position: absolute;
+    }
+
+    &:hover {
+      box-shadow: none;
+      transition: box-shadow 0.75s ease;
     }
   }
 }
