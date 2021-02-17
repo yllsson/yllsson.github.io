@@ -99,7 +99,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 
 .title .titleHeaders h1,
 .title .titleHeaders h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'Poppins';
   color: #0f4b57;
   z-index: 1;
@@ -140,61 +140,112 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 25% 25% 1fr;
-  grid-template-rows: 10rem 30rem 30rem 5rem;
-  grid-template-areas: '. header header .' '. project1 project2 .' '. project3 project4 .' '. . . .';
-  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects h2 {
   text-align: center;
-  grid-area: header;
+  margin: 1rem 0 5rem;
+  font-size: 3rem;
+}
+
+.project {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.projects .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  border: 1px solid rgba(211, 211, 211, 0.6);
-  border-radius: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  margin: 0;
-  padding: 0;
-}
-
-.projects .project img {
   width: 100%;
-  max-height: 80%;
+  height: 60vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgba(193, 222, 226, 0.1);
+}
+
+.project h3,
+.project img {
+  width: 50%;
+}
+
+.project h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.project img {
+  height: 100%;
   object-fit: cover;
-  z-index: -1;
-  border-radius: 15px 15px 0 0;
   object-position: top;
 }
 
-.projects .project h3 {
+.project.project1 img {
+  object-position: center;
+}
+
+.projectReversed {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  flex: 1;
-  margin: 1rem 0;
-  text-align: center;
+}
+
+/*
+ .projects {
+  display: grid;
+  grid-template-columns: 1fr 25% 25% 1fr;
+  grid-template-rows: 10rem 30rem 30rem 5rem;
+  grid-template-areas:
+    '. header header .'
+    '. project1 project2 .'
+    '. project3 project4 .'
+    '. . . .';
+  gap: 4rem;
+
+  h2 {
+    text-align: center;
+    grid-area: header;
+
+    @include flexbox(row);
+  }
+
+  .project {
+    @include flexbox(column);
+
+    height: 100%;
+    border: 1px solid rgba(lightgray, 0.6);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+
+    img {
+      width: 100%;
+      max-height: 80%;
+      object-fit: cover;
+      z-index: -1;
+      border-radius: 15px 15px 0 0;
+      object-position: top;
+    }
+
+    h3 {
+      @include flexbox(column);
+
+      font-size: 2rem;
+      flex: 1;
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
 }
 
 .project1 {
   grid-area: project1;
-}
 
-.project1 img {
-  object-position: center;
+  img {
+    object-position: center;
+  }
 }
 
 .project2 {
@@ -208,7 +259,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 .project4 {
   grid-area: project4;
 }
-
+*/
 .contact {
   display: flex;
   flex-direction: column;
