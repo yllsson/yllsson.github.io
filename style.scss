@@ -114,7 +114,6 @@ nav {
   }
 
   .titleImages {
-    // max-width: 50%;
     height: 100%;
     width: 45%;
     position: relative;
@@ -130,7 +129,7 @@ nav {
     .ylvaBg {
       position: absolute;
       top: -50rem;
-      right: -80rem;
+      left: 80rem;
       z-index: -1;
       height: 100%;
     }
@@ -138,15 +137,15 @@ nav {
 
   .titleImages.loaded {
     .justYlva {
-      right: 28%;
+      right: 33%;
       transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
     }
 
     .ylvaBg {
       top: 0;
-      right: 0;
+      left: 0;
       transition: top 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11),
-        right 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+        left 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
     }
   }
 }
@@ -274,7 +273,7 @@ nav {
   @include flexbox(column);
 
   width: 100%;
-  height: 50vh;
+  height: 80vh;
 }
 
 .contact-links {
@@ -304,17 +303,3 @@ nav {
     }
   }
 }
-
-// CONTACT LINKS ANIMATION (not yet in use)//
-
-// a.active {
-//   width: auto;
-//   transition: width 2s ease;
-
-//   span {
-//     position: relative;
-
-//     visibility: visible;
-//     transition: visibility 2s ease, position 2s ease;
-//   }
-// }
