@@ -92,15 +92,16 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
   padding-left: 3rem;
   width: 40%;
 }
 
 .title .titleHeaders h1,
 .title .titleHeaders h2 {
+  width: 70%;
   font-size: 4rem;
   font-family: 'Poppins';
+  text-align: left;
   color: #0f4b57;
   z-index: 1;
   margin: 0.5rem;
@@ -165,7 +166,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   color: #fff;
 }
 
-.project h3,
+.project .projectInfo,
 .project img {
   width: 50%;
 }
@@ -173,6 +174,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 .project h3 {
   font-size: 3rem;
   text-align: center;
+  margin: 1rem;
 }
 
 .project img {
@@ -183,6 +185,17 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 
 .project.randomQuoteMachine img {
   object-position: center;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectInfo i {
+  margin: 0.5rem;
 }
 
 .projectReversed {
