@@ -12,8 +12,12 @@ body {
   color: #0f4b57;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 header {
@@ -39,7 +43,6 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,11 +50,10 @@ nav a {
   color: #0f4b57;
   height: 100%;
   margin-right: 3rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 nav a .hover {
-  transition: all 0.2s ease-in-out;
   position: relative;
 }
 
@@ -62,7 +64,7 @@ nav a .hover:before, nav a .hover:after {
   left: 0;
   width: 0px;
   height: 2px;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
   opacity: 0;
   background-color: rgba(15, 75, 87, 0.6);
 }
@@ -153,6 +155,10 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   font-size: 4rem;
 }
 
+.projects a {
+  color: #fff;
+}
+
 .project {
   display: flex;
   flex-direction: row;
@@ -172,7 +178,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 }
 
 .project h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   margin: 1rem;
 }
@@ -198,6 +204,31 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   margin: 0.5rem;
 }
 
+.projectInfo h3 .hover {
+  position: relative;
+}
+
+.projectInfo h3 .hover:before, .projectInfo h3 .hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.projectInfo h3:hover {
+  cursor: pointer;
+}
+
+.projectInfo h3:hover .hover:before, .projectInfo h3:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
 .projectReversed {
   display: flex;
   flex-direction: row-reverse;
@@ -205,75 +236,6 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   align-items: center;
 }
 
-/*
- .projects {
-  display: grid;
-  grid-template-columns: 1fr 25% 25% 1fr;
-  grid-template-rows: 10rem 30rem 30rem 5rem;
-  grid-template-areas:
-    '. header header .'
-    '. project1 project2 .'
-    '. project3 project4 .'
-    '. . . .';
-  gap: 4rem;
-
-  h2 {
-    text-align: center;
-    grid-area: header;
-
-    @include flexbox(row);
-  }
-
-  .project {
-    @include flexbox(column);
-
-    height: 100%;
-    border: 1px solid rgba(lightgray, 0.6);
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    padding: 0;
-
-    img {
-      width: 100%;
-      max-height: 80%;
-      object-fit: cover;
-      z-index: -1;
-      border-radius: 15px 15px 0 0;
-      object-position: top;
-    }
-
-    h3 {
-      @include flexbox(column);
-
-      font-size: 2rem;
-      flex: 1;
-      margin: 1rem 0;
-      text-align: center;
-    }
-  }
-}
-
-.project1 {
-  grid-area: project1;
-
-  img {
-    object-position: center;
-  }
-}
-
-.project2 {
-  grid-area: project2;
-}
-
-.project3 {
-  grid-area: project3;
-}
-
-.project4 {
-  grid-area: project4;
-}
-*/
 .contact {
   display: flex;
   flex-direction: column;
@@ -293,14 +255,12 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 
 .contact-links a {
   color: #0f4b57;
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-right: 2rem;
-  padding: 0.5rem 1rem;
-  height: 3.5rem;
+  font-size: 2rem;
+  margin-right: 3rem;
+  padding: 1rem 1.5rem;
   border-radius: 15px;
   border: 1px solid #458992;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -313,6 +273,6 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 }
 
 .contact-links a:hover {
-  box-shadow: none;
-  transition: box-shadow 0.75s ease;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease;
 }
