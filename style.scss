@@ -176,9 +176,11 @@ nav {
 
   background-color: $text-color;
   color: #fff;
+  position: relative;
 
   .projectInfo,
-  img {
+  img,
+  .imgLink {
     width: 50%;
   }
 
@@ -192,6 +194,15 @@ nav {
     height: 100%;
     object-fit: cover;
     object-position: top;
+    z-index: 0;
+  }
+
+  .imgLink {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   &.randomQuoteMachine img {
@@ -238,6 +249,10 @@ nav {
 
 .projectReversed {
   @include flexbox(row-reverse);
+
+  .imgLink {
+    left: 50%;
+  }
 }
 
 // CONTACT SECTION //

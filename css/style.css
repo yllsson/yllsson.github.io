@@ -170,10 +170,12 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   overflow: hidden;
   background-color: #0f4b57;
   color: #fff;
+  position: relative;
 }
 
 .project .projectInfo,
-.project img {
+.project img,
+.project .imgLink {
   width: 50%;
 }
 
@@ -187,6 +189,15 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  z-index: 0;
+}
+
+.project .imgLink {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .project.randomQuoteMachine img {
@@ -234,6 +245,10 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+}
+
+.projectReversed .imgLink {
+  left: 50%;
 }
 
 .contact {
