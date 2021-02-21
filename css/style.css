@@ -85,61 +85,63 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   margin: 7rem 0 10rem;
 }
 
-.title .titleHeaders {
+.titleHeaders {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
   padding-left: 3rem;
   width: 40%;
+  height: 100%;
 }
 
-.title .titleHeaders h1,
-.title .titleHeaders h2 {
+.titleHeaders h1,
+.titleHeaders h2 {
   width: 70%;
   font-size: 4rem;
   font-family: 'Poppins';
   text-align: left;
   color: #0f4b57;
-  z-index: 1;
   margin: 0.5rem;
 }
 
-.title .titleImages {
+.titleImages {
+  display: inline-block;
+  justify-self: flex-end;
   height: 100%;
   width: 45%;
   position: relative;
 }
 
-.title .titleImages .justYlva {
+.titleImages .justYlva {
   position: absolute;
-  top: 33%;
+  bottom: -1rem;
   right: -60rem;
   z-index: 0;
   height: 70%;
 }
 
-.title .titleImages .ylvaBg {
+.titleImages .ylvaBg {
   position: absolute;
-  top: -50rem;
-  left: 80rem;
+  bottom: 50rem;
+  right: -80rem;
   z-index: -1;
   height: 100%;
 }
 
-.title .titleImages.loaded .justYlva {
-  right: 33%;
+.titleImages.loaded .justYlva {
+  right: 25%;
   transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
 
-.title .titleImages.loaded .ylvaBg {
-  top: 0;
-  left: 0;
-  transition: top 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11), left 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+.titleImages.loaded .ylvaBg {
+  bottom: 0;
+  right: 0;
+  transition: bottom 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11), right 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
 }
 
 .projects {
@@ -290,4 +292,39 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 .contact-links a:hover {
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s ease;
+}
+
+@media only screen and (max-width: 1440px) {
+  .title {
+    height: 50vh;
+    justify-content: space-evenly;
+  }
+  .titleHeaders {
+    padding-left: 0;
+    width: initial;
+    flex: 0.5;
+  }
+  .titleHeaders h1,
+  .titleHeaders h2 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .projects h2 {
+    font-size: 3rem;
+  }
+  .projects .project {
+    height: 40vh;
+  }
+  .projectInfo h3 {
+    font-size: 2rem;
+  }
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .contact .contact-links {
+    width: 100%;
+  }
+  .contact a {
+    font-size: 1.5rem;
+  }
 }
