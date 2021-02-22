@@ -301,6 +301,7 @@ nav {
 }
 
 @media only screen and (max-width: 1440px) {
+  // title
   .title {
     height: 50vh;
     justify-content: space-evenly;
@@ -318,6 +319,7 @@ nav {
     }
   }
 
+  // projects
   .projects {
     h2 {
       font-size: 3rem;
@@ -334,6 +336,7 @@ nav {
     }
   }
 
+  // contact
   .contact {
     h2 {
       font-size: 3rem;
@@ -345,6 +348,7 @@ nav {
 
     a {
       font-size: 1.5rem;
+      margin-right: 1rem;
     }
   }
 }
@@ -369,13 +373,34 @@ nav {
   // title
   .title {
     margin: 4rem 0 5rem;
+    justify-content: space-between;
+
     .titleHeaders {
-      width: 50%;
+      padding-left: 2rem;
     }
 
     h1,
     h2 {
       font-size: 2rem;
+    }
+
+    .titleImages {
+      width: 30%;
+    }
+
+    .ylvaBg {
+      height: 90%;
+    }
+
+    .justYlva {
+      height: 60%;
+    }
+
+    .loaded {
+      .justYlva {
+        bottom: -0.5rem;
+        right: 60%;
+      }
     }
   }
 
@@ -409,7 +434,7 @@ nav {
 
     a {
       margin: 0.5rem 0;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
   }
 }

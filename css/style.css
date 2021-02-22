@@ -326,6 +326,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .contact a {
     font-size: 1.5rem;
+    margin-right: 1rem;
   }
 }
 
@@ -342,13 +343,27 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .title {
     margin: 4rem 0 5rem;
+    justify-content: space-between;
   }
   .title .titleHeaders {
-    width: 50%;
+    padding-left: 2rem;
   }
   .title h1,
   .title h2 {
     font-size: 2rem;
+  }
+  .title .titleImages {
+    width: 30%;
+  }
+  .title .ylvaBg {
+    height: 90%;
+  }
+  .title .justYlva {
+    height: 60%;
+  }
+  .title .loaded .justYlva {
+    bottom: -0.5rem;
+    right: 60%;
   }
   .projects h2 {
     font-size: 2rem;
@@ -368,6 +383,6 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .contact-links a {
     margin: 0.5rem 0;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
