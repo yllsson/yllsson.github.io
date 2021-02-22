@@ -107,6 +107,13 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   text-align: left;
   color: #0f4b57;
   margin: 0.5rem;
+  opacity: 0;
+}
+
+.titleHeaders.loaded h1,
+.titleHeaders.loaded h2 {
+  opacity: 1;
+  transition: opacity 3s ease 2s;
 }
 
 .titleImages {
@@ -332,14 +339,20 @@ nav a:hover .hover:before, nav a:hover .hover:after {
 
 @media only screen and (max-width: 1024px) {
   .title {
-    margin: 5rem 0 7rem;
+    margin: 5rem 0 5rem;
+  }
+  .title .loaded .ylvaBg {
+    right: -7%;
   }
   .title .loaded .justYlva {
-    right: 35%;
+    right: 30%;
   }
   .titleHeaders {
     padding-left: 2rem;
     flex: 0.8;
+  }
+  .projects h2 {
+    margin: 1rem 0 4rem;
   }
   .contact .contact-links {
     width: 90%;
@@ -432,7 +445,6 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   .title h2 {
     font-size: 1.7rem;
     width: 80%;
-    opacity: 0;
   }
   .title .titleImages {
     width: 100%;
@@ -446,7 +458,6 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .title .loaded h1,
   .title .loaded h2 {
-    opacity: 1;
     transition: opacity 2.5s ease 3s;
   }
   .title .loaded .justYlva {
@@ -486,12 +497,6 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .title {
     margin: 1rem 0 2rem;
-  }
-  .title h1,
-  .title h2 {
-    font-size: 1.7rem;
-    width: 80%;
-    opacity: 0;
   }
   .title .titleImages {
     width: 100%;

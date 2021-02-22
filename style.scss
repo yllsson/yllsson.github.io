@@ -114,6 +114,15 @@ nav {
     color: $text-color;
     // z-index: 1;
     margin: 0.5rem;
+    opacity: 0;
+  }
+
+  &.loaded {
+    h1,
+    h2 {
+      opacity: 1;
+      transition: opacity 3s ease 2s;
+    }
   }
 }
 
@@ -356,10 +365,13 @@ nav {
 @media only screen and (max-width: 1024px) {
   // title
   .title {
-    margin: 5rem 0 7rem;
+    margin: 5rem 0 5rem;
     .loaded {
+      .ylvaBg {
+        right: -7%;
+      }
       .justYlva {
-        right: 35%;
+        right: 30%;
       }
     }
   }
@@ -367,6 +379,13 @@ nav {
   .titleHeaders {
     padding-left: 2rem;
     flex: 0.8;
+  }
+
+  // projects
+  .projects {
+    h2 {
+      margin: 1rem 0 4rem;
+    }
   }
 
   // contact
@@ -503,7 +522,6 @@ nav {
     h2 {
       font-size: 1.7rem;
       width: 80%;
-      opacity: 0;
     }
 
     .titleImages {
@@ -522,7 +540,6 @@ nav {
     .loaded {
       h1,
       h2 {
-        opacity: 1;
         transition: opacity 2.5s ease 3s;
       }
 
@@ -585,13 +602,6 @@ nav {
   // title
   .title {
     margin: 1rem 0 2rem;
-
-    h1,
-    h2 {
-      font-size: 1.7rem;
-      width: 80%;
-      opacity: 0;
-    }
 
     .titleImages {
       width: 100%;
