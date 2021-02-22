@@ -336,9 +336,10 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   header img {
     margin-left: 2rem;
+    width: 3.5rem;
   }
   nav a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-right: 2rem;
   }
   .title {
@@ -363,7 +364,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .title .loaded .justYlva {
     bottom: -0.5rem;
-    right: 60%;
+    right: 58%;
   }
   .projects h2 {
     font-size: 2rem;
@@ -373,7 +374,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
     height: 40vh;
   }
   .projectInfo h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .contact h2 {
     font-size: 2rem;
@@ -384,5 +385,108 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   .contact-links a {
     margin: 0.5rem 0;
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding: 1rem;
+  }
+  header img {
+    margin-left: 1rem;
+    width: 3rem;
+  }
+  nav a {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+  .title {
+    margin: 2rem 0 3rem;
+    position: relative;
+  }
+  .title .titleHeaders {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+  }
+  .title h1,
+  .title h2 {
+    font-size: 1.7rem;
+    width: 80%;
+    opacity: 0;
+  }
+  .title .titleImages {
+    width: 100%;
+  }
+  .title .ylvaBg {
+    height: 100%;
+  }
+  .title .justYlva {
+    height: 70%;
+    z-index: -1;
+  }
+  .title .loaded h1,
+  .title .loaded h2 {
+    opacity: 1;
+    transition: opacity 2.5s ease 3s;
+  }
+  .title .loaded .justYlva {
+    bottom: -0.5rem;
+    right: 8%;
+  }
+  .projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .projects .project {
+    height: 30vh;
+  }
+  .projectInfo h3 {
+    font-size: 1.2rem;
+    margin: 0 0.8rem;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  .contact a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding: 1rem;
+  }
+  header img {
+    margin-left: 1rem;
+    width: 3rem;
+  }
+  nav a {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+  .title {
+    margin: 1rem 0 2rem;
+  }
+  .title h1,
+  .title h2 {
+    font-size: 1.7rem;
+    width: 80%;
+    opacity: 0;
+  }
+  .title .titleImages {
+    width: 100%;
+  }
+  .title .ylvaBg {
+    height: 90%;
+  }
+  .title .justYlva {
+    height: 60%;
+  }
+  .title .loaded .justYlva {
+    right: 4%;
+  }
+  .title .loaded .ylvaBg {
+    right: -4%;
   }
 }

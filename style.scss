@@ -360,12 +360,13 @@ nav {
 
     img {
       margin-left: 2rem;
+      width: 3.5rem;
     }
   }
 
   nav {
     a {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-right: 2rem;
     }
   }
@@ -399,7 +400,7 @@ nav {
     .loaded {
       .justYlva {
         bottom: -0.5rem;
-        right: 60%;
+        right: 58%;
       }
     }
   }
@@ -418,7 +419,7 @@ nav {
 
   .projectInfo {
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   }
 
@@ -435,6 +436,155 @@ nav {
     a {
       margin: 0.5rem 0;
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  // nav
+  header {
+    padding: 1rem;
+
+    img {
+      margin-left: 1rem;
+      width: 3rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  // title
+  .title {
+    margin: 2rem 0 3rem;
+
+    position: relative;
+
+    .titleHeaders {
+      margin: auto;
+      position: absolute;
+
+      width: 100%;
+    }
+
+    h1,
+    h2 {
+      font-size: 1.7rem;
+      width: 80%;
+      opacity: 0;
+    }
+
+    .titleImages {
+      width: 100%;
+    }
+
+    .ylvaBg {
+      height: 100%;
+    }
+
+    .justYlva {
+      height: 70%;
+      z-index: -1;
+    }
+
+    .loaded {
+      h1,
+      h2 {
+        opacity: 1;
+        transition: opacity 2.5s ease 3s;
+      }
+
+      .justYlva {
+        bottom: -0.5rem;
+        right: 8%;
+      }
+    }
+  }
+
+  // projects
+  .projects {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .project {
+      height: 30vh;
+    }
+  }
+
+  .projectInfo {
+    h3 {
+      font-size: 1.2rem;
+      margin: 0 0.8rem;
+    }
+  }
+
+  // contact
+  .contact {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  // nav
+  header {
+    padding: 1rem;
+
+    img {
+      margin-left: 1rem;
+      width: 3rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  // title
+  .title {
+    margin: 1rem 0 2rem;
+
+    h1,
+    h2 {
+      font-size: 1.7rem;
+      width: 80%;
+      opacity: 0;
+    }
+
+    .titleImages {
+      width: 100%;
+    }
+
+    .ylvaBg {
+      height: 90%;
+    }
+
+    .justYlva {
+      height: 60%;
+    }
+
+    .loaded {
+      .justYlva {
+        right: 4%;
+      }
+
+      .ylvaBg {
+        right: -4%;
+      }
     }
   }
 }

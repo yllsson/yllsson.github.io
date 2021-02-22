@@ -1,8 +1,10 @@
 // TITLE ANIMATION //
 const titleImgContainer = document.getElementById('titleImages');
+const titleHeadersContainer = document.getElementById('titleHeaders');
 
 document.addEventListener('DOMContentLoaded', () => {
   titleImgContainer.classList.add('loaded');
+  titleHeadersContainer.classList.add('loaded');
 });
 
 // PROJECT SECTION CLASS ASSIGNMENT //
