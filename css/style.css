@@ -330,6 +330,25 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .title {
+    margin: 5rem 0 7rem;
+  }
+  .title .loaded .justYlva {
+    right: 35%;
+  }
+  .titleHeaders {
+    padding-left: 2rem;
+    flex: 0.8;
+  }
+  .contact .contact-links {
+    width: 90%;
+  }
+  .contact a {
+    font-size: 1.25rem;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   header {
     padding: 1rem;
@@ -453,7 +472,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 411px) {
   header {
     padding: 1rem;
   }
