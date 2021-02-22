@@ -348,3 +348,68 @@ nav {
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  // nav
+  header {
+    padding: 1rem;
+
+    img {
+      margin-left: 2rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1.3rem;
+      margin-right: 2rem;
+    }
+  }
+
+  // title
+  .title {
+    margin: 4rem 0 5rem;
+    .titleHeaders {
+      width: 50%;
+    }
+
+    h1,
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  // projects
+  .projects {
+    h2 {
+      font-size: 2rem;
+      margin: 1rem 0 3rem;
+    }
+
+    .project {
+      height: 40vh;
+    }
+  }
+
+  .projectInfo {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  // contact
+  .contact {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .contact-links {
+    flex-direction: column;
+
+    a {
+      margin: 0.5rem 0;
+      font-size: 1.25rem;
+    }
+  }
+}

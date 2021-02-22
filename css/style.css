@@ -328,3 +328,46 @@ nav a:hover .hover:before, nav a:hover .hover:after {
     font-size: 1.5rem;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 1rem;
+  }
+  header img {
+    margin-left: 2rem;
+  }
+  nav a {
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
+  .title {
+    margin: 4rem 0 5rem;
+  }
+  .title .titleHeaders {
+    width: 50%;
+  }
+  .title h1,
+  .title h2 {
+    font-size: 2rem;
+  }
+  .projects h2 {
+    font-size: 2rem;
+    margin: 1rem 0 3rem;
+  }
+  .projects .project {
+    height: 40vh;
+  }
+  .projectInfo h3 {
+    font-size: 1.5rem;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .contact-links {
+    flex-direction: column;
+  }
+  .contact-links a {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+  }
+}
