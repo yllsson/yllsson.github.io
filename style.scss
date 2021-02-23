@@ -378,7 +378,7 @@ nav {
 
   // title
   .title {
-    margin: 2rem 0 5rem;
+    margin: 1rem 0 5rem;
     justify-content: space-evenly;
     height: 60vh;
 
@@ -441,12 +441,12 @@ nav {
 
     .loaded {
       .ylvaBg {
-        right: -7%;
-        bottom: 6rem;
+        // right: -7%;
+        // bottom: 6rem;
       }
       .justYlva {
         right: 25%;
-        bottom: 6rem;
+        // bottom: 6rem;
       }
     }
   }
@@ -509,6 +509,7 @@ nav {
 
     .titleHeaders {
       padding-left: 2rem;
+      width: 45%;
     }
 
     .titleImages {
@@ -596,7 +597,7 @@ nav {
 
     h1,
     h2 {
-      font-size: 1.7rem;
+      font-size: 2rem;
       margin: 0.2rem 0;
       width: 80%;
     }
@@ -605,8 +606,12 @@ nav {
       width: 100%;
     }
 
+    .ylvaBg {
+      width: 100%;
+    }
+
     .justYlva {
-      // width: 70%;
+      width: 40%;
       z-index: -1;
     }
 
@@ -684,14 +689,6 @@ nav {
     .titleImages {
       width: 100%;
     }
-
-    // .ylvaBg {
-    //   height: 90%;
-    // }
-
-    // .justYlva {
-    //   height: 60%;
-    // }
 
     .loaded {
       .justYlva {
