@@ -363,17 +363,32 @@ nav {
     }
 
     a {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-right: 1rem;
     }
   }
 }
 
 @media only screen and (max-width: 1440px) {
+  .nav {
+    a {
+      font-size: 1.4rem;
+    }
+  }
+
   // title
   .title {
-    height: 50vh;
+    margin: 2rem 0 5rem;
     justify-content: space-evenly;
+    height: 60vh;
+
+    .ylvaBg {
+      width: 100%;
+    }
+
+    .justYlva {
+      width: 40%;
+    }
   }
 
   .titleHeaders {
@@ -391,32 +406,30 @@ nav {
   .projects {
     h2 {
       font-size: 3rem;
+      margin-bottom: 5rem;
     }
 
     .project {
-      height: 40vh;
+      height: 60vh;
     }
   }
 
   .projectInfo {
     h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 
   // contact
   .contact {
+    height: 90vh;
+
     h2 {
       font-size: 3rem;
     }
 
-    .contact-links {
-      width: 100%;
-    }
-
     a {
-      font-size: 1.5rem;
-      margin-right: 1rem;
+      font-size: 1.4rem;
     }
   }
 }
@@ -424,20 +437,25 @@ nav {
 @media only screen and (max-width: 1024px) {
   // title
   .title {
-    margin: 5rem 0 5rem;
+    margin: 2rem 0;
+
     .loaded {
       .ylvaBg {
         right: -7%;
       }
       .justYlva {
-        right: 30%;
+        right: 25%;
       }
     }
   }
 
   .titleHeaders {
     padding-left: 2rem;
-    flex: 0.8;
+    // flex: 0.8;
+  }
+
+  .titleImages {
+    width: 60%;
   }
 
   // projects

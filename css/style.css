@@ -331,15 +331,25 @@ nav a:hover .hover:before, nav a:hover .hover:after {
     width: 100%;
   }
   .contact a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 1rem;
   }
 }
 
 @media only screen and (max-width: 1440px) {
+  .nav a {
+    font-size: 1.4rem;
+  }
   .title {
-    height: 50vh;
+    margin: 2rem 0 5rem;
     justify-content: space-evenly;
+    height: 60vh;
+  }
+  .title .ylvaBg {
+    width: 100%;
+  }
+  .title .justYlva {
+    width: 40%;
   }
   .titleHeaders {
     padding-left: 0;
@@ -352,38 +362,40 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   }
   .projects h2 {
     font-size: 3rem;
+    margin-bottom: 5rem;
   }
   .projects .project {
-    height: 40vh;
+    height: 60vh;
   }
   .projectInfo h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  .contact {
+    height: 90vh;
   }
   .contact h2 {
     font-size: 3rem;
   }
-  .contact .contact-links {
-    width: 100%;
-  }
   .contact a {
-    font-size: 1.5rem;
-    margin-right: 1rem;
+    font-size: 1.4rem;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .title {
-    margin: 5rem 0 5rem;
+    margin: 2rem 0;
   }
   .title .loaded .ylvaBg {
     right: -7%;
   }
   .title .loaded .justYlva {
-    right: 30%;
+    right: 25%;
   }
   .titleHeaders {
     padding-left: 2rem;
-    flex: 0.8;
+  }
+  .titleImages {
+    width: 60%;
   }
   .projects h2 {
     margin: 1rem 0 4rem;
