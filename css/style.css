@@ -85,7 +85,7 @@ nav a:hover .hover:before, nav a:hover .hover:after {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 7rem 0 10rem;
+  margin: 4rem 0 8rem;
 }
 
 .titleHeaders {
