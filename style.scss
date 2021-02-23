@@ -442,9 +442,11 @@ nav {
     .loaded {
       .ylvaBg {
         right: -7%;
+        bottom: 6rem;
       }
       .justYlva {
         right: 25%;
+        bottom: 6rem;
       }
     }
   }
@@ -497,34 +499,31 @@ nav {
 
   // title
   .title {
-    margin: 4rem 0 5rem;
+    margin: 2rem 0;
     justify-content: space-between;
-
-    .titleHeaders {
-      padding-left: 2rem;
-    }
 
     h1,
     h2 {
       font-size: 2rem;
     }
 
+    .titleHeaders {
+      padding-left: 2rem;
+    }
+
     .titleImages {
-      width: 30%;
-    }
-
-    .ylvaBg {
-      height: 90%;
-    }
-
-    .justYlva {
-      height: 60%;
+      width: 80%;
     }
 
     .loaded {
+      .ylvaBg {
+        right: 0;
+        bottom: 0;
+      }
+
       .justYlva {
-        bottom: -0.5rem;
-        right: 58%;
+        right: 28%;
+        bottom: 0;
       }
     }
   }
@@ -564,13 +563,13 @@ nav {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
   // nav
   header {
     padding: 1rem;
 
     img {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
       width: 3rem;
     }
   }
@@ -585,7 +584,7 @@ nav {
   // title
   .title {
     margin: 2rem 0 3rem;
-
+    height: 60vh;
     position: relative;
 
     .titleHeaders {
@@ -598,6 +597,7 @@ nav {
     h1,
     h2 {
       font-size: 1.7rem;
+      margin: 0.2rem 0;
       width: 80%;
     }
 
@@ -605,12 +605,8 @@ nav {
       width: 100%;
     }
 
-    .ylvaBg {
-      height: 100%;
-    }
-
     .justYlva {
-      height: 70%;
+      // width: 70%;
       z-index: -1;
     }
 
@@ -620,8 +616,12 @@ nav {
         transition: opacity 2.5s ease 3s;
       }
 
+      .ylvaBg {
+        bottom: -4rem;
+      }
+
       .justYlva {
-        bottom: -0.5rem;
+        bottom: -4rem;
         right: 8%;
       }
     }
@@ -664,7 +664,7 @@ nav {
     padding: 1rem;
 
     img {
-      margin-left: 1rem;
+      margin-left: 0;
       width: 3rem;
     }
   }
@@ -672,34 +672,37 @@ nav {
   nav {
     a {
       font-size: 1rem;
-      margin-right: 1.5rem;
+      margin-right: 1rem;
     }
   }
 
   // title
   .title {
-    margin: 1rem 0 2rem;
+    margin: 2rem 0 3rem;
+    height: 45vh;
 
     .titleImages {
       width: 100%;
     }
 
-    .ylvaBg {
-      height: 90%;
-    }
+    // .ylvaBg {
+    //   height: 90%;
+    // }
 
-    .justYlva {
-      height: 60%;
-    }
+    // .justYlva {
+    //   height: 60%;
+    // }
 
     .loaded {
       .justYlva {
         right: 4%;
       }
+    }
+  }
 
-      .ylvaBg {
-        right: -4%;
-      }
+  .contact {
+    a {
+      font-size: 0.9rem;
     }
   }
 }
