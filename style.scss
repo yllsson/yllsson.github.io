@@ -139,7 +139,7 @@ nav {
     transform: translateY(76%);
     right: -60rem;
     z-index: 0;
-    width: 40%;
+    width: 35%;
   }
 
   .ylvaBg {
@@ -147,7 +147,7 @@ nav {
     bottom: 50rem;
     right: -80rem;
     z-index: -1;
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -648,7 +648,7 @@ nav {
   }
 
   .project:last-child {
-    border-bottom: 1px solid rgba($text-color 0.6);
+    border-bottom: 1px solid rgba($text-color, 0.6);
   }
 
   // contact
