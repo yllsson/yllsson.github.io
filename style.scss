@@ -91,9 +91,9 @@ nav {
 // TITLE SECTION
 .title {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   @include flexbox(row);
-  margin: 4rem 0 8rem;
+  margin: 0;
 }
 
 .titleHeaders {
@@ -130,15 +130,16 @@ nav {
   justify-self: flex-end;
 
   height: 100%;
-  width: 45%;
+  width: 50%;
   position: relative;
 
   .justYlva {
     position: absolute;
-    bottom: -3rem;
+    bottom: 50%;
+    transform: translateY(76%);
     right: -60rem;
     z-index: 0;
-    width: 35%;
+    width: 40%;
   }
 
   .ylvaBg {
@@ -146,7 +147,7 @@ nav {
     bottom: 50rem;
     right: -80rem;
     z-index: -1;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -157,7 +158,8 @@ nav {
   }
 
   .ylvaBg {
-    bottom: -3rem;
+    bottom: 50%;
+    transform: translateY(50%);
     right: 0;
     transition: bottom 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11),
       right 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
@@ -377,16 +379,16 @@ nav {
 
   // title
   .title {
-    margin: 1rem 0 5rem;
+    margin: 0;
     justify-content: space-evenly;
-    height: 60vh;
+    height: 90vh;
 
     .ylvaBg {
-      width: 100%;
+      width: 90%;
     }
 
     .justYlva {
-      width: 40%;
+      width: 35%;
     }
   }
 
@@ -435,24 +437,19 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   // title
-  .title {
-    margin: 2rem 0;
-
-    .loaded {
-      .ylvaBg {
-        // right: -7%;
-        // bottom: 6rem;
-      }
-      .justYlva {
-        right: 25%;
-        // bottom: 6rem;
-      }
+  .loaded {
+    .ylvaBg {
+      // right: -7%;
+      // bottom: 6rem;
+    }
+    .justYlva {
+      // right: 25%;
+      // bottom: 6rem;
     }
   }
 
   .titleHeaders {
     padding-left: 2rem;
-    // flex: 0.8;
   }
 
   .titleImages {
@@ -498,8 +495,8 @@ nav {
 
   // title
   .title {
-    margin: 2rem 0;
     justify-content: space-between;
+    height: 80vh;
 
     h1,
     h2 {
@@ -514,25 +511,13 @@ nav {
     .titleImages {
       width: 80%;
     }
-
-    .loaded {
-      .ylvaBg {
-        right: 0;
-        bottom: 0;
-      }
-
-      .justYlva {
-        right: 28%;
-        bottom: 0;
-      }
-    }
   }
 
   // projects
   .projects {
     h2 {
       font-size: 2rem;
-      margin: 1rem 0 3rem;
+      margin: 0 0 3rem;
     }
 
     .project {
@@ -583,20 +568,19 @@ nav {
 
   // title
   .title {
-    margin: 2rem 0 3rem;
-    height: 60vh;
+    // margin: 2rem 0 3rem;
+    height: 90vh;
     position: relative;
 
     .titleHeaders {
       margin: auto;
       position: absolute;
-
       width: 100%;
     }
 
     h1,
     h2 {
-      font-size: 2rem;
+      font-size: 1.9rem;
       margin: 0.2rem 0;
       width: 80%;
     }
@@ -615,18 +599,8 @@ nav {
     }
 
     .loaded {
-      h1,
-      h2 {
-        transition: opacity 2.5s ease 3s;
-      }
-
-      .ylvaBg {
-        bottom: -4rem;
-      }
-
       .justYlva {
-        bottom: -4rem;
-        right: 8%;
+        right: 6%;
       }
     }
   }
@@ -682,8 +656,8 @@ nav {
 
   // title
   .title {
-    margin: 2rem 0 3rem;
-    height: 45vh;
+    // margin: 2rem 0 3rem;
+    // height: 45vh;
 
     .titleImages {
       width: 100%;
@@ -691,7 +665,7 @@ nav {
 
     .loaded {
       .justYlva {
-        right: 4%;
+        right: 2%;
       }
     }
   }
@@ -699,6 +673,26 @@ nav {
   .contact {
     a {
       font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  // nav
+  nav {
+    a {
+      margin-right: 0.7rem;
+    }
+  }
+
+  // title
+  .title {
+    .titleHeaders {
+      padding: 1rem;
+    }
+    h1,
+    h2 {
+      font-size: 1.6rem;
     }
   }
 }
