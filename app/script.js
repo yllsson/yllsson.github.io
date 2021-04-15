@@ -2,10 +2,13 @@
 const titleImgContainer = document.getElementById('titleImages');
 const titleHeadersContainer = document.getElementById('titleHeaders');
 
-document.addEventListener('DOMContentLoaded', () => {
+const loadAnimations = () => {
   titleImgContainer.classList.add('loaded');
   titleHeadersContainer.classList.add('loaded');
-});
+};
+
+document.addEventListener('DOMContentLoaded', loadAnimations);
+document.addEventListener('beforeunload', loadAnimations);
 
 // PROJECT SECTION CLASS ASSIGNMENT //
 
