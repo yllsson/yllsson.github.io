@@ -219,7 +219,7 @@ nav {
     left: 0;
   }
 
-  &.randomQuoteMachine img {
+  &.centeredImg img {
     object-position: center;
   }
 }
@@ -275,20 +275,23 @@ nav {
   @include flexbox(column);
 
   width: 100%;
-  height: 80vh;
+  height: 60vh;
 }
 
 .contact-links {
   @include flexbox(row);
 
-  width: 70vw;
+  width: 100vw;
+
+  h2 {
+    font-size: 2.7rem;
+  }
 
   a {
     color: $text-color;
     font-size: 2rem;
     margin-right: 3rem;
     padding: 1rem 1.5rem;
-    // height: 3.5rem;
 
     border-radius: 15px;
     border: 1px solid $text-color;
@@ -356,7 +359,7 @@ nav {
   // contact
   .contact {
     h2 {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
 
     .contact-links {
@@ -423,10 +426,8 @@ nav {
 
   // contact
   .contact {
-    height: 90vh;
-
     h2 {
-      font-size: 3rem;
+      font-size: 2.6rem;
     }
 
     a {
