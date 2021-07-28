@@ -438,17 +438,6 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   // title
-  .loaded {
-    .ylvaBg {
-      // right: -7%;
-      // bottom: 6rem;
-    }
-    .justYlva {
-      // right: 25%;
-      // bottom: 6rem;
-    }
-  }
-
   .titleHeaders {
     padding-left: 2rem;
   }
@@ -639,6 +628,10 @@ nav {
       flex: 1;
     }
     // height: 30vh;
+  }
+
+  .projectReversed .imgLink {
+    left: 0;
   }
 
   .projectInfo {

@@ -518,6 +518,9 @@ nav a:hover .hover:before, nav a:hover .hover:after {
     width: 100%;
     flex: 1;
   }
+  .projectReversed .imgLink {
+    left: 0;
+  }
   .projectInfo h3 {
     font-size: 1.2rem;
     margin: 0 0.8rem;
